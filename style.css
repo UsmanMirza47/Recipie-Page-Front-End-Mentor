@@ -1,0 +1,232 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+:root {
+    --font-color-brown: hsl(14, 45%, 36%);
+    --font-color-rose: hsl(332, 51%, 32%);
+    --bac-color-rose: hsl(330, 100%, 98%);
+    --bac-color-body: hsl(30, 54%, 90%);
+    --color1: hsl(30, 18%, 87%);
+    --color2: hsl(30, 10%, 34%);
+    --color3: hsl(24, 5%, 18%);
+    --font-para: 16px;
+    --font-head: Young Serif;
+    --font-normal: Outfit;
+}
+
+body {
+    background-color: var(--bac-color-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    font-family: var(--font-normal);
+    color: var(--color2);
+}
+
+body h2 {
+    font-weight: 400;
+    font-family: var(--font-head);
+    color: var(--color3);
+}
+
+body h3 {
+    font-weight: 400;
+    font-family: var(--font-head);
+    color: var(--font-color-brown);
+}
+
+body p {
+    font-size: var(--font-para);
+    color: var(--color2);
+}
+
+body span {
+    color: var(--color2);
+    font-weight: 700;
+}
+
+body li {
+    color: var(--color2);
+    padding-left: 20px;
+}
+
+body .con-pre ul li::marker {
+    color: var(--font-color-rose);
+}
+
+body ul li::marker {
+    color: var(--font-color-brown);
+}
+
+body ol li::marker {
+    color: var(--font-color-brown);
+    font-weight: 700;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 40vw;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container>div>img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.con-pre {
+    background-color: var(--bac-color-rose);
+    color: var(--font-color-rose);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.con-pre>ul>li {
+    color: var(--color2);
+}
+
+/* .con-content{
+    width: 100%;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid var(--color1);
+    width: 50%;
+}
+
+td {
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+th {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--font-color-brown);
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--bac-color-body);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        align-items: center;
+        font-family: var(--font-normal);
+        color: var(--color2);
+        margin: 0;
+        padding: 0;
+    }
+
+    body h2 {
+        font-weight: 400;
+        font-family: var(--font-head);
+        color: var(--color3);
+    }
+
+    body h3 {
+        font-weight: 400;
+        font-family: var(--font-head);
+        color: var(--font-color-brown);
+    }
+
+    body p {
+        font-size: var(--font-para);
+        color: var(--color2);
+    }
+
+    body span {
+        color: var(--color2);
+        font-weight: 700;
+    }
+
+    body li {
+        color: var(--color2);
+        padding-left: 20px;
+    }
+
+    body .con-pre ul li::marker {
+        color: var(--font-color-rose);
+    }
+
+    body ul li::marker {
+        color: var(--font-color-brown);
+    }
+
+    body ol li::marker {
+        color: var(--font-color-brown);
+        font-weight: 700;
+    }
+
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+    .container>div>img {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .con-pre {
+        background-color: var(--bac-color-rose);
+        color: var(--font-color-rose);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .con-pre>ul>li {
+        color: var(--color2);
+    }
+
+    .con-content{
+        padding: 25px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    tr {
+        border-bottom: 1px solid var(--color1);
+        width: 50%;
+    }
+
+    td {
+        padding-left: 20px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    th {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: var(--font-color-brown);
+        text-align: left;
+    }
+}
